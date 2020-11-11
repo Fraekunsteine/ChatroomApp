@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chatroom</title>
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    </head>
+    <body>
+        <div class="maindisp">
+            <div class="chatroom-display">
+                <div class="flex-container" id="msgbox">
+                    <div class="justify-items"></div>
+                </div>              
+                <form id="msgbar" action="">
+                    <input id="in" type="text" autocomplete="off"> 
+                    <button>Send</button>                        
+                </form>
+            </div>
+            <div class="chatroom-info">
+                <div class="userinfo">
+                    <img id="profile-pic" src="/imgs/anon.jpg" alt="anon">
+                    <h1 id="user-name"></h1>
+                </div>
+                <h2>Online Users:</h2>
+                <div class="flex-container userlist"></div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/js/chatroom.js"></script>
+    </body>
+</html>

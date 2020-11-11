@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+body {
+    background: #2C9E85;
+    height: 100%;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+}
+b {
+    font-weight: bolder;
+}
+h1 {
+    font: 20px 'Cooper', serif;
+}
+h2 {
+    font-size: 16px;
+    margin: 8px 0px 6px 16px;
+}
+.maindisp {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    max-width: 960px;
+    background: #7AFFE2;
+    border: 4px ridge #9E3E1C;
+    display: flex;
+}
+.chatroom-display {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    background: #59EBCB;
+}
+.chatroom-info {
+    height: 100%;
+    width: 35%;
+    border-left: 4px ridge #9E3E1C;
+}
+#msgbar {
+    display: flex;
+    margin: 10px;  
+}
+#msgbar #in {
+    width: 90%;
+}
+#msgbar button {
+    width: 10%;
+}
+.flex-container {
+    background: #FFFFFF;
+    border: 3px groove #2C9E85;
+    border-radius: 4px;
+    margin: 20px;  
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.flex-container .justify-items { 
+    /* fills space and push items down to bottom */
+    display: flex;      
+    flex: 1 1 auto;
+}
+#msgbox {
+    height: 90%;
+}
+.msg-row {
+    padding: 5px;   
+}
+#msgbox .message {
+    float: left;
+    background: #a0ad93;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 2px 5px;
+}
+#msgbox .self-message {
+    float: right;
+    background: #A7E561;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 2px 5px;
+}
+#msgbox .server-message {
+    text-align: center;
+    padding: 4px;
+    margin: 2px 5px;
+    font: italic 12px Arial, sans-serif;
+    color: #808080;
+}
+#msgbox p {
+    margin: 5px;
+    font: 12px 'Times New Roman';
+}
+.userinfo {
+    display: flex;
+    background: lightblue;
+    border-bottom: 4px ridge #9E3E1C;
+}
+#profile-pic {
+    margin: 10px;
+    border: 2px groove #2C9E85;
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+}
+#user-name {
+    align-self: center;
+}
+.userlist {
+    margin-top: 0px;
+    height: 75%;
+}
+.onlineuser {
+    padding: 2px;
+    margin: 3px;
+    border: 2px groove #2C9E85;
+    border-radius: 10px;
+    background: #dddddd;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #FFFFFF;   
+}
+::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+    border-radius: 3px;
+}
